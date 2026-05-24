@@ -122,6 +122,14 @@
   .cinfo li b{color:var(--teal);display:inline-block;width:90px;font-weight:600}
   .reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
+  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+  /* why us */
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:36px}
+  .why .w{background:#fff;border:1px solid var(--line);border-radius:14px;padding:30px 26px;position:relative}
+  .why .w .n{font-family:var(--serif);font-size:34px;color:var(--gold2);line-height:1;margin-bottom:12px}
+  .why .w h3{color:var(--teal)}
+  .why .w p{color:var(--muted);font-size:14.5px}
+  @media(max-width:860px){.why{grid-template-columns:1fr}}
   footer{background:var(--teal);color:#a9c6c2;font-size:13.5px;padding:40px 0;text-align:center}
   footer .logo{color:#fff;justify-content:center;margin-bottom:10px}
   .demo-tag{position:fixed;bottom:14px;right:14px;background:rgba(15,59,70,.92);color:#dcebe8;font-size:11.5px;padding:8px 13px;border-radius:8px;z-index:60;letter-spacing:.3px}
@@ -170,11 +178,11 @@
   <p class="lead reveal">From a single implant to a complete makeover, planned carefully and finished beautifully.</p>
   <div class="grid3">
     <div class="card reveal"><div class="ic">🦷</div><h3>Dental implants</h3><p>Replace missing teeth with permanent, natural-looking implants, planned in 3D with CBCT scanning for precision and predictability.</p></div>
-    <div class="card reveal"><div class="ic">✨</div><h3>Porcelain veneers</h3><p>Hand-finished veneers and composite bonding to reshape, brighten and correct, designed to suit your face.</p></div>
-    <div class="card reveal"><div class="ic">😁</div><h3>Invisalign</h3><p>Straighten your teeth discreetly with clear aligners, mapped with iTero so you can see the result before you start.</p></div>
+    <div class="card reveal d1"><div class="ic">✨</div><h3>Porcelain veneers</h3><p>Hand-finished veneers and composite bonding to reshape, brighten and correct, designed to suit your face.</p></div>
+    <div class="card reveal d2"><div class="ic">😁</div><h3>Invisalign</h3><p>Straighten your teeth discreetly with clear aligners, mapped with iTero so you can see the result before you start.</p></div>
     <div class="card reveal"><div class="ic">💎</div><h3>Smile makeovers</h3><p>A full plan combining whitening, alignment and restoration to give you a smile that finally feels like yours.</p></div>
-    <div class="card reveal"><div class="ic">🌟</div><h3>Teeth whitening</h3><p>Professional whitening with Enlighten and Philips Zoom for a brighter, even shade you can trust.</p></div>
-    <div class="card reveal"><div class="ic">💆</div><h3>Facial aesthetics</h3><p>Subtle facial aesthetic treatments to complement your smile, delivered by a clinical team you already trust.</p></div>
+    <div class="card reveal d1"><div class="ic">🌟</div><h3>Teeth whitening</h3><p>Professional whitening with Enlighten and Philips Zoom for a brighter, even shade you can trust.</p></div>
+    <div class="card reveal d2"><div class="ic">💆</div><h3>Facial aesthetics</h3><p>Subtle facial aesthetic treatments to complement your smile, delivered by a clinical team you already trust.</p></div>
   </div>
 </div></section>
 
@@ -191,13 +199,23 @@
   </ul>
 </div></section>
 
+<section style="background:linear-gradient(180deg,var(--cream),var(--cream2))"><div class="wrap">
+  <div class="eyebrow reveal" style="text-align:center">Why patients choose us</div>
+  <h2 class="reveal" style="text-align:center">Care you can see, plan and trust.</h2>
+  <div class="why">
+    <div class="w reveal"><div class="n">01</div><h3>Planned in 3D</h3><p>CBCT and iTero scanning across four surgeries, so implants, veneers and Invisalign are mapped precisely and you see the likely result before you start.</p></div>
+    <div class="w reveal d1"><div class="n">02</div><h3>Proven by 400+ reviews</h3><p>More than four hundred five-star Google reviews from Camden patients who came for the work and stayed for how it felt.</p></div>
+    <div class="w reveal d2"><div class="n">03</div><h3>In the heart of Camden</h3><p>On Royal College Street, a short walk from Camden Town and Kentish Town, with new patients always welcome.</p></div>
+  </div>
+</div></section>
+
 <section><div class="wrap">
   <div class="eyebrow reveal">Inside the practice</div>
   <h2 class="reveal">The work, up close.</h2>
   <p class="lead reveal">A look at the treatments Camden patients come to NW1 Dental Care for.</p>
   <div class="gal">
     <div class="gtile reveal"><div class="ph"><img src="proof/bonding.jpg" alt="Composite bonding result at NW1 Dental Care"></div><div class="cap"><b>Composite bonding</b>Reshaping and brightening front teeth with hand-finished bonding, designed to look natural.</div></div>
-    <div class="gtile reveal"><div class="ph"><img src="proof/dentures.jpg" alt="Restorative dentistry result at NW1 Dental Care"></div><div class="cap"><b>Restorative dentistry</b>Replacing and restoring teeth so patients can eat, speak and smile with confidence again.</div></div>
+    <div class="gtile reveal d1"><div class="ph"><img src="proof/dentures.jpg" alt="Restorative dentistry result at NW1 Dental Care"></div><div class="cap"><b>Restorative dentistry</b>Replacing and restoring teeth so patients can eat, speak and smile with confidence again.</div></div>
   </div>
 </div></section>
 
@@ -207,8 +225,8 @@
   <p class="lead reveal">A before-and-after gallery is where cosmetic patients decide. Here is how yours would be presented, ready for the practice's real consented cases.</p>
   <div class="ba">
     <div class="slot reveal"><div class="img before"><span class="tag">Before</span>Smile makeover</div><div class="cap">Worn, uneven front teeth restored with veneers and whitening.</div></div>
-    <div class="slot reveal"><div class="img after"><span class="tag">After</span>Smile makeover</div><div class="cap">A natural, even, brighter smile, planned around the patient's face.</div></div>
-    <div class="slot reveal"><div class="img after"><span class="tag">Implant</span>Single tooth</div><div class="cap">A missing tooth replaced with a fixed implant that blends in completely.</div></div>
+    <div class="slot reveal d1"><div class="img after"><span class="tag">After</span>Smile makeover</div><div class="cap">A natural, even, brighter smile, planned around the patient's face.</div></div>
+    <div class="slot reveal d2"><div class="img after"><span class="tag">Implant</span>Single tooth</div><div class="cap">A missing tooth replaced with a fixed implant that blends in completely.</div></div>
   </div>
   <p class="ba-note reveal">Placeholder layout shown. Real, consented before-and-after photography would be added at the practice.</p>
 </div></section>
@@ -218,9 +236,9 @@
   <h2 class="reveal">Loved by the people who matter most.</h2>
   <div class="qgrid">
     <div class="quote reveal"><div class="stars">★★★★★</div><p>"Honestly the best dental experience I have had. Calm, careful and completely painless."</p><div class="by">- Robert Young</div></div>
-    <div class="quote reveal"><div class="stars">★★★★★</div><p>"My Invisalign result is incredible. The team explained every step and I always felt looked after."</p><div class="by">- Betty Skinner</div></div>
+    <div class="quote reveal d1"><div class="stars">★★★★★</div><p>"My Invisalign result is incredible. The team explained every step and I always felt looked after."</p><div class="by">- Betty Skinner</div></div>
     <div class="quote reveal"><div class="stars">★★★★★</div><p>"Had an implant done here and could not be happier. Professional, friendly and reassuring throughout."</p><div class="by">- John Cooper</div></div>
-    <div class="quote reveal"><div class="stars">★★★★★</div><p>"My whitening looks fantastic and so natural. I would not go anywhere else in Camden."</p><div class="by">- Eva B</div></div>
+    <div class="quote reveal d1"><div class="stars">★★★★★</div><p>"My whitening looks fantastic and so natural. I would not go anywhere else in Camden."</p><div class="by">- Eva B</div></div>
   </div>
 </div></section>
 
